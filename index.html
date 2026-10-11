@@ -1,0 +1,1196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Premium software engineering and digital transformation solutions for businesses. We build secure, reliable systems that solve real-world problems.">
+    <meta name="keywords" content="web development, software solutions, digital transformation, business systems, automation, Ghana tech">
+    <title>JIHOPE TECH | Engineering Reliable Digital Transformation</title>
+    <meta property="og:title" content="JIHOPE TECH | Engineering Reliable Digital Transformation">
+    <meta property="og:description" content="Premium software engineering and digital transformation solutions for businesses.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://jihope.tech">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --navy: #001F3F;
+            --electric-blue: #0074D9;
+            --charcoal: #333333;
+            --white: #FFFFFF;
+            --silver: #ECEFF1;
+            --gray: #666666;
+            --light-gray: #999999;
+            --success: #2ECC40;
+            --alert: #FF851B;
+        }
+
+        body {
+            font-family: 'Inter', 'Roboto', 'Open Sans', sans-serif;
+            color: var(--charcoal);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* ===== HEADER / NAVIGATION ===== */
+        header {
+            background-color: var(--navy);
+            padding: 1.5rem 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 8px rgba(0, 31, 63, 0.1);
+        }
+
+        .header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--white);
+            text-decoration: none;
+            letter-spacing: 0.5px;
+        }
+
+        nav {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        nav a {
+            color: var(--white);
+            text-decoration: none;
+            font-size: 0.95rem;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: var(--electric-blue);
+        }
+
+        .nav-cta {
+            background-color: var(--electric-blue);
+            color: var(--white);
+            padding: 0.75rem 1.5rem;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+
+        .nav-cta:hover {
+            background-color: #0055A4;
+        }
+
+        /* ===== HERO SECTION ===== */
+        .hero {
+            background: linear-gradient(135deg, var(--navy) 0%, #0a1929 100%);
+            background-image: 
+                linear-gradient(135deg, var(--navy) 0%, #0a1929 100%),
+                radial-gradient(circle at 20% 50%, rgba(0, 116, 217, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 80%, rgba(0, 116, 217, 0.05) 0%, transparent 50%);
+            color: var(--white);
+            padding: 6rem 2rem;
+            text-align: center;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hero-content {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: bold;
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+            letter-spacing: -0.5px;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            margin-bottom: 2rem;
+            color: #ECEFF1;
+            line-height: 1.8;
+        }
+
+        .hero-cta {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 2rem;
+        }
+
+        .btn {
+            padding: 0.75rem 2rem;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        .btn-primary {
+            background-color: var(--electric-blue);
+            color: var(--white);
+        }
+
+        .btn-primary:hover {
+            background-color: #0055A4;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 116, 217, 0.3);
+        }
+
+        .btn-secondary {
+            background-color: transparent;
+            color: var(--electric-blue);
+            border-color: var(--electric-blue);
+        }
+
+        .btn-secondary:hover {
+            background-color: var(--electric-blue);
+            color: var(--white);
+        }
+
+        /* ===== TRUST SIGNALS ===== */
+        .trust-section {
+            max-width: 1200px;
+            margin: 4rem auto;
+            padding: 0 2rem;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 3rem;
+            color: var(--navy);
+        }
+
+        .trust-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .trust-card {
+            background: var(--white);
+            border: 1px solid var(--silver);
+            border-radius: 8px;
+            padding: 2rem;
+            text-align: center;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 8px rgba(0, 31, 63, 0.08);
+        }
+
+        .trust-card:hover {
+            box-shadow: 0 4px 12px rgba(0, 31, 63, 0.12);
+            transform: translateY(-4px);
+            border-left: 4px solid var(--electric-blue);
+        }
+
+        .trust-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .trust-card h3 {
+            color: var(--navy);
+            font-size: 1.25rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .trust-card p {
+            color: var(--gray);
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        /* ===== ABOUT SECTION ===== */
+        .about-section {
+            background-color: var(--silver);
+            padding: 4rem 2rem;
+            margin-top: 4rem;
+        }
+
+        .about-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .about-text h2 {
+            color: var(--navy);
+            font-size: 2.25rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .about-text p {
+            color: var(--gray);
+            margin-bottom: 1rem;
+            font-size: 1.05rem;
+            line-height: 1.8;
+        }
+
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .value-item h4 {
+            color: var(--electric-blue);
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .value-item p {
+            color: var(--light-gray);
+            font-size: 0.9rem;
+        }
+
+        /* ===== SERVICES SECTION ===== */
+        .services-section {
+            max-width: 1200px;
+            margin: 4rem auto;
+            padding: 0 2rem;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .service-card {
+            background: var(--white);
+            border: 1px solid var(--silver);
+            border-radius: 8px;
+            padding: 2rem;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .service-card:hover {
+            box-shadow: 0 4px 16px rgba(0, 116, 217, 0.15);
+            transform: translateY(-6px);
+        }
+
+        .service-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--electric-blue);
+        }
+
+        .service-card h3 {
+            color: var(--navy);
+            font-size: 1.25rem;
+            margin-bottom: 1rem;
+        }
+
+        .service-card p {
+            color: var(--gray);
+            font-size: 0.95rem;
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+
+        .service-link {
+            color: var(--electric-blue);
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+            transition: all 0.3s ease;
+        }
+
+        .service-link:hover {
+            transform: translateX(4px);
+        }
+
+        /* ===== PROCESS SECTION ===== */
+        .process-section {
+            background-color: var(--white);
+            padding: 4rem 2rem;
+            margin-top: 4rem;
+        }
+
+        .process-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .process-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .process-step {
+            background: linear-gradient(135deg, var(--navy) 0%, #0a2f5f 100%);
+            color: var(--white);
+            padding: 2rem;
+            border-radius: 8px;
+            position: relative;
+            padding-left: 3.5rem;
+        }
+
+        .process-step::before {
+            content: attr(data-step);
+            position: absolute;
+            left: 1rem;
+            top: 1.5rem;
+            background-color: var(--electric-blue);
+            width: 2.5rem;
+            height: 2.5rem;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+
+        .process-step h4 {
+            font-size: 1.15rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .process-step p {
+            font-size: 0.95rem;
+            line-height: 1.6;
+            color: #ECEFF1;
+        }
+
+        /* ===== PORTFOLIO SECTION ===== */
+        .portfolio-section {
+            max-width: 1200px;
+            margin: 4rem auto;
+            padding: 0 2rem;
+        }
+
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .portfolio-card {
+            background: var(--white);
+            border: 1px solid var(--silver);
+            border-radius: 8px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 8px rgba(0, 31, 63, 0.08);
+        }
+
+        .portfolio-card:hover {
+            box-shadow: 0 8px 20px rgba(0, 116, 217, 0.15);
+            transform: translateY(-8px);
+        }
+
+        .portfolio-image {
+            background: linear-gradient(135deg, var(--navy) 0%, var(--electric-blue) 100%);
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            color: var(--white);
+        }
+
+        .portfolio-content {
+            padding: 1.5rem;
+        }
+
+        .portfolio-tag {
+            display: inline-block;
+            background-color: var(--silver);
+            color: var(--electric-blue);
+            padding: 0.4rem 0.8rem;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .portfolio-card h3 {
+            color: var(--navy);
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .portfolio-card p {
+            color: var(--gray);
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+            line-height: 1.6;
+        }
+
+        .portfolio-cta {
+            color: var(--electric-blue);
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .portfolio-cta:hover {
+            transform: translateX(4px);
+        }
+
+        /* ===== PRICING SECTION ===== */
+        .pricing-section {
+            background-color: var(--silver);
+            padding: 4rem 2rem;
+            margin-top: 4rem;
+        }
+
+        .pricing-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .pricing-card {
+            background: var(--white);
+            border: 2px solid var(--silver);
+            border-radius: 8px;
+            padding: 2rem;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .pricing-card:hover {
+            border-color: var(--electric-blue);
+            box-shadow: 0 8px 20px rgba(0, 116, 217, 0.15);
+            transform: translateY(-6px);
+        }
+
+        .pricing-card.featured {
+            border-color: var(--electric-blue);
+            box-shadow: 0 4px 16px rgba(0, 116, 217, 0.2);
+            transform: scale(1.05);
+        }
+
+        .pricing-tag {
+            background-color: var(--electric-blue);
+            color: var(--white);
+            padding: 0.4rem 0.8rem;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-weight: bold;
+            display: inline-block;
+            margin-bottom: 1rem;
+        }
+
+        .pricing-card h3 {
+            color: var(--navy);
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .pricing-subtitle {
+            color: var(--gray);
+            font-size: 0.9rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .pricing-range {
+            color: var(--electric-blue);
+            font-size: 1.3rem;
+            font-weight: bold;
+            margin-bottom: 1.5rem;
+        }
+
+        .pricing-features {
+            text-align: left;
+            margin-bottom: 1.5rem;
+        }
+
+        .pricing-features li {
+            list-style: none;
+            color: var(--gray);
+            font-size: 0.9rem;
+            padding: 0.4rem 0;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .pricing-features li::before {
+            content: "✓";
+            color: var(--success);
+            font-weight: bold;
+        }
+
+        /* ===== TESTIMONIALS SECTION ===== */
+        .testimonials-section {
+            max-width: 1200px;
+            margin: 4rem auto;
+            padding: 0 2rem;
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .testimonial-card {
+            background: var(--white);
+            border-left: 4px solid var(--electric-blue);
+            border-radius: 4px;
+            padding: 1.5rem;
+            box-shadow: 0 2px 8px rgba(0, 31, 63, 0.08);
+        }
+
+        .testimonial-quote {
+            color: var(--charcoal);
+            font-size: 1rem;
+            font-style: italic;
+            margin-bottom: 1rem;
+            line-height: 1.6;
+        }
+
+        .testimonial-author {
+            color: var(--electric-blue);
+            font-weight: bold;
+            font-size: 0.9rem;
+        }
+
+        /* ===== FINAL CTA SECTION ===== */
+        .final-cta-section {
+            background: linear-gradient(135deg, var(--navy) 0%, #0a1929 100%);
+            color: var(--white);
+            padding: 4rem 2rem;
+            text-align: center;
+            margin-top: 4rem;
+        }
+
+        .final-cta-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .final-cta-section h2 {
+            font-size: 2.25rem;
+            margin-bottom: 1rem;
+        }
+
+        .final-cta-section p {
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            color: #ECEFF1;
+            line-height: 1.8;
+        }
+
+        .contact-info {
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .contact-item {
+            text-align: center;
+        }
+
+        .contact-item a {
+            color: var(--electric-blue);
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .contact-item a:hover {
+            color: var(--white);
+        }
+
+        /* ===== FOOTER ===== */
+        footer {
+            background-color: var(--navy);
+            color: var(--white);
+            padding: 3rem 2rem 1.5rem;
+        }
+
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-col h4 {
+            color: var(--electric-blue);
+            margin-bottom: 1rem;
+            font-size: 1.05rem;
+        }
+
+        .footer-col p,
+        .footer-col a {
+            color: #ECEFF1;
+            font-size: 0.9rem;
+            text-decoration: none;
+            line-height: 1.8;
+        }
+
+        .footer-col a:hover {
+            color: var(--electric-blue);
+        }
+
+        .footer-col ul {
+            list-style: none;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #ECEFF1;
+            font-size: 0.85rem;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            margin-top: 1rem;
+        }
+
+        .social-links a {
+            color: var(--electric-blue);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .social-links a:hover {
+            color: var(--white);
+        }
+
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+
+            nav {
+                gap: 1rem;
+                flex-wrap: wrap;
+            }
+
+            nav a {
+                font-size: 0.85rem;
+            }
+
+            .about-content {
+                grid-template-columns: 1fr;
+            }
+
+            .pricing-card.featured {
+                transform: scale(1);
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .about-text h2 {
+                font-size: 1.75rem;
+            }
+
+            .process-step {
+                padding-left: 2rem;
+            }
+
+            .contact-info {
+                flex-direction: column;
+                gap: 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header {
+                padding: 1rem;
+            }
+
+            .header-container {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            nav {
+                flex-direction: column;
+                width: 100%;
+            }
+
+            nav a,
+            .nav-cta {
+                width: 100%;
+                text-align: center;
+            }
+
+            .hero {
+                padding: 3rem 1rem;
+                min-height: auto;
+            }
+
+            .hero h1 {
+                font-size: 1.5rem;
+            }
+
+            .hero-cta {
+                flex-direction: column;
+            }
+
+            .btn {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- HEADER / NAVIGATION -->
+    <header>
+        <div class="header-container">
+            <a href="#" class="logo">JIHOPE TECH</a>
+            <nav>
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#pricing">Pricing</a>
+                <a href="#contact" class="nav-cta">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Engineering Reliable Digital Transformation</h1>
+            <p>We help businesses improve operations, strengthen digital presence, and build secure technology systems that drive measurable growth.</p>
+            <div class="hero-cta">
+                <a href="#contact" class="btn btn-primary">Book a Free Consultation</a>
+                <a href="#portfolio" class="btn btn-secondary">View Our Work</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- TRUST SIGNALS -->
+    <section class="trust-section">
+        <h2 class="section-title">Why Businesses Trust JIHOPE TECH</h2>
+        <div class="trust-grid">
+            <div class="trust-card">
+                <div class="trust-icon">🛡️</div>
+                <h3>Reliable Delivery</h3>
+                <p>We deliver what we promise, on time, with consistent quality. Your systems work because we build them to last.</p>
+            </div>
+            <div class="trust-card">
+                <div class="trust-icon">🔒</div>
+                <h3>Security-First Approach</h3>
+                <p>Data protection and system integrity are built into every solution. We take security as seriously as you do.</p>
+            </div>
+            <div class="trust-card">
+                <div class="trust-icon">🎯</div>
+                <h3>Outcome-Driven</h3>
+                <p>We measure success by your business impact. Every solution is designed to deliver measurable value.</p>
+            </div>
+            <div class="trust-card">
+                <div class="trust-icon">🤝</div>
+                <h3>Trusted Partner</h3>
+                <p>We're invested in your long-term success. We support, maintain, and help your systems evolve.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="about-section" id="about">
+        <div class="about-container">
+            <h2 class="section-title">About JIHOPE TECH</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Building Technology That Matters</h2>
+                    <p>JIHOPE TECH is a premium technology studio helping businesses solve real-world challenges through reliable, secure, and innovative digital solutions.</p>
+                    <p>We are not a generic web design agency. We are technology transformation partners who help organizations transform operations, improve digital presence, solve operational bottlenecks, and deliver systems built for reliability and growth.</p>
+                    <p><strong>Our Mission:</strong> To solve real-world problems through reliable, secure, and innovative technology.</p>
+                    <p><strong>Our Vision:</strong> To build technology that makes businesses, communities, and everyday life better.</p>
+                </div>
+                <div class="values-grid">
+                    <div class="value-item">
+                        <h4>Reliability</h4>
+                        <p>Systems that work, every time</p>
+                    </div>
+                    <div class="value-item">
+                        <h4>Integrity</h4>
+                        <p>Honest, transparent partnerships</p>
+                    </div>
+                    <div class="value-item">
+                        <h4>Security</h4>
+                        <p>Protection and trust as foundation</p>
+                    </div>
+                    <div class="value-item">
+                        <h4>Innovation</h4>
+                        <p>Strategic use of technology</p>
+                    </div>
+                    <div class="value-item">
+                        <h4>Excellence</h4>
+                        <p>Consistent quality and detail</p>
+                    </div>
+                    <div class="value-item">
+                        <h4>Trustworthiness</h4>
+                        <p>Accountability and long-term focus</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section class="services-section" id="services">
+        <h2 class="section-title">What We Build</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon">🌐</div>
+                <h3>Professional Websites</h3>
+                <p>Modern, responsive, high-performance websites designed to represent your brand and convert visitors into leads.</p>
+                <a href="#" class="service-link">Learn More →</a>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🎨</div>
+                <h3>Digital Experience Design</h3>
+                <p>User-centered design that makes your digital products intuitive, beautiful, and effective.</p>
+                <a href="#" class="service-link">Learn More →</a>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">📊</div>
+                <h3>Custom Software Solutions</h3>
+                <p>Tailored applications designed for your operational needs—schools, clinics, manufacturing, and more.</p>
+                <a href="#" class="service-link">Learn More →</a>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">⚙️</div>
+                <h3>Web Application Development</h3>
+                <p>Scalable, secure web platforms built for complex business workflows and integrations.</p>
+                <a href="#" class="service-link">Learn More →</a>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">⚡</div>
+                <h3>Business Automation</h3>
+                <p>Automate repetitive workflows, optimize processes, and increase productivity with custom automation solutions.</p>
+                <a href="#" class="service-link">Learn More →</a>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🚀</div>
+                <h3>Transformation Consulting</h3>
+                <p>Strategic guidance to modernize your digital presence, systems, and operations for sustainable growth.</p>
+                <a href="#" class="service-link">Learn More →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROCESS SECTION -->
+    <section class="process-section">
+        <div class="process-container">
+            <h2 class="section-title">How We Work</h2>
+            <div class="process-grid">
+                <div class="process-step" data-step="1">
+                    <h4>Discovery & Strategy</h4>
+                    <p>We understand your business, challenges, and goals through deep conversation about problems, opportunities, and desired outcomes.</p>
+                </div>
+                <div class="process-step" data-step="2">
+                    <h4>Planning & Architecture</h4>
+                    <p>We develop project plans and technical roadmaps, ensuring stakeholder alignment and clear documentation.</p>
+                </div>
+                <div class="process-step" data-step="3">
+                    <h4>Design & Prototyping</h4>
+                    <p>We create wireframes, mockups, and interactive prototypes for feedback and refinement.</p>
+                </div>
+                <div class="process-step" data-step="4">
+                    <h4>Development & Testing</h4>
+                    <p>We build with focus on quality and security, followed by comprehensive testing and QA.</p>
+                </div>
+                <div class="process-step" data-step="5">
+                    <h4>Deployment & Launch</h4>
+                    <p>We deploy to production, monitor performance, and provide training and documentation.</p>
+                </div>
+                <div class="process-step" data-step="6">
+                    <h4>Support & Growth</h4>
+                    <p>We offer ongoing maintenance, support, and help your system grow with your business.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PORTFOLIO SECTION -->
+    <section class="portfolio-section" id="portfolio">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="portfolio-grid">
+            <div class="portfolio-card">
+                <div class="portfolio-image">📚</div>
+                <div class="portfolio-content">
+                    <span class="portfolio-tag">Education</span>
+                    <h3>EduSync School Management</h3>
+                    <p>Comprehensive platform for schools with student records, attendance, grades, and parent communication.</p>
+                    <a href="#" class="portfolio-cta">View Case Study →</a>
+                </div>
+            </div>
+            <div class="portfolio-card">
+                <div class="portfolio-image">🏭</div>
+                <div class="portfolio-content">
+                    <span class="portfolio-tag">Manufacturing</span>
+                    <h3>Block Factory System</h3>
+                    <p>Production tracking, inventory management, sales, and financial reporting for manufacturing operations.</p>
+                    <a href="#" class="portfolio-cta">View Case Study →</a>
+                </div>
+            </div>
+            <div class="portfolio-card">
+                <div class="portfolio-image">✈️</div>
+                <div class="portfolio-content">
+                    <span class="portfolio-tag">Travel</span>
+                    <h3>Believe Travel Consult</h3>
+                    <p>Professional business positioning, presentation strategy, and service messaging for travel services.</p>
+                    <a href="#" class="portfolio-cta">View Case Study →</a>
+                </div>
+            </div>
+        </div>
+        <div style="text-align: center; margin-top: 2rem;">
+            <a href="#" class="btn btn-primary">View All Projects</a>
+        </div>
+    </section>
+
+    <!-- PRICING SECTION -->
+    <section class="pricing-section" id="pricing">
+        <div class="pricing-container">
+            <h2 class="section-title">Service Packages</h2>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <h3>Essential Digital Presence</h3>
+                    <p class="pricing-subtitle">Perfect for small businesses</p>
+                    <div class="pricing-range">GHS 2,500 - 7,500</div>
+                    <ul class="pricing-features">
+                        <li>Responsive website</li>
+                        <li>Brand-aligned design</li>
+                        <li>Contact forms</li>
+                        <li>SEO optimization</li>
+                        <li>Mobile ready</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-secondary">Learn More</a>
+                </div>
+                <div class="pricing-card featured">
+                    <span class="pricing-tag">Most Popular</span>
+                    <h3>Growth Business Platform</h3>
+                    <p class="pricing-subtitle">For scaling organizations</p>
+                    <div class="pricing-range">GHS 6,000 - 15,000</div>
+                    <ul class="pricing-features">
+                        <li>Custom business website</li>
+                        <li>Portfolio showcase</li>
+                        <li>Lead generation</li>
+                        <li>CMS management</li>
+                        <li>Analytics integration</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary">Get Started</a>
+                </div>
+                <div class="pricing-card">
+                    <h3>Business Transformation</h3>
+                    <p class="pricing-subtitle">Complete digital systems</p>
+                    <div class="pricing-range">GHS 10,000 - 35,000+</div>
+                    <ul class="pricing-features">
+                        <li>Custom dashboard</li>
+                        <li>Database workflows</li>
+                        <li>User management</li>
+                        <li>Reporting tools</li>
+                        <li>Full support</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-secondary">Learn More</a>
+                </div>
+                <div class="pricing-card">
+                    <h3>Enterprise Solutions</h3>
+                    <p class="pricing-subtitle">Complex, custom needs</p>
+                    <div class="pricing-range">Custom Quote</div>
+                    <ul class="pricing-features">
+                        <li>Bespoke development</li>
+                        <li>Advanced integrations</li>
+                        <li>Strategic consulting</li>
+                        <li>Ongoing support</li>
+                        <li>Dedicated team</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-secondary">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS SECTION -->
+    <section class="testimonials-section">
+        <h2 class="section-title">What Our Clients Say</h2>
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <div class="testimonial-quote">"JIHOPE TECH transformed our school operations. The system is reliable, easy to use, and our parents love the communication features."</div>
+                <div class="testimonial-author">— School Administrator, Ghana</div>
+            </div>
+            <div class="testimonial-card">
+                <div class="testimonial-quote">"Professional, reliable, and exactly what our business needed. They understood our challenges and delivered a solution that actually works."</div>
+                <div class="testimonial-author">— Business Owner, Accra</div>
+            </div>
+            <div class="testimonial-card">
+                <div class="testimonial-quote">"Great communication, quality work, and commitment to getting it right. We trust JIHOPE TECH with our digital systems."</div>
+                <div class="testimonial-author">— Organization Director, Ghana</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FINAL CTA SECTION -->
+    <section class="final-cta-section" id="contact">
+        <div class="final-cta-content">
+            <h2>Ready to Transform Your Digital Presence?</h2>
+            <p>Whether you need a professional website, business automation, or a complete digital transformation—we're here to help. Let's discuss what you're building and how we can support your success.</p>
+            <a href="mailto:hello@jihope.tech" class="btn btn-primary">Book a Free Consultation</a>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <p>📧 Email</p>
+                    <a href="mailto:hello@jihope.tech">hello@jihope.tech</a>
+                </div>
+                <div class="contact-item">
+                    <p>📞 WhatsApp</p>
+                    <a href="https://wa.me/233XXXXXXXXX">+233 XXX XXX XXXX</a>
+                </div>
+                <div class="contact-item">
+                    <p>📍 Location</p>
+                    <p>Accra, Ghana</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>JIHOPE TECH</h4>
+                    <p>Premium software engineering and digital transformation solutions building reliable systems for real-world impact.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#services">Website Development</a></li>
+                        <li><a href="#services">UI/UX Design</a></li>
+                        <li><a href="#services">Business Systems</a></li>
+                        <li><a href="#services">Web Applications</a></li>
+                        <li><a href="#services">Automation</a></li>
+                        <li><a href="#services">Consulting</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Connect</h4>
+                    <p>Email: <a href="mailto:hello@jihope.tech">hello@jihope.tech</a></p>
+                    <p>WhatsApp: <a href="https://wa.me/233XXXXXXXXX">+233 XXX XXX XXXX</a></p>
+                    <p>Location: Accra, Ghana</p>
+                    <div class="social-links">
+                        <a href="#">LinkedIn</a>
+                        <a href="#">Twitter</a>
+                        <a href="#">GitHub</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 JIHOPE TECH. All rights reserved. | Engineering Reliable Digital Transformation</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+
+        // Add simple animation on scroll (optional enhancement)
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.trust-card, .service-card, .portfolio-card, .pricing-card').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(20px)';
+            el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
